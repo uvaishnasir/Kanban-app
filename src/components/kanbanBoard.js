@@ -34,7 +34,7 @@ const KanbanBoard = () => {
   }, []);
 
   const groupBy = (key) => {
-    if (key == "user") {
+    if (key === "user") {
       return users;
     }
     return ticketsStore.reduce((result, ticket) => {
